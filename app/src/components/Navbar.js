@@ -8,8 +8,8 @@ export default class MyNavbar extends React.Component{
             <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
-                <Nav>
-                    <Nav.Link href="#deets">More deets</Nav.Link>
+                <Nav className="ml-auto">
+                    <Nav.Link href="#deets">More deetss</Nav.Link>
                     <Nav.Link eventKey={2} href="#memes">
                     Dank memes
                     </Nav.Link>
