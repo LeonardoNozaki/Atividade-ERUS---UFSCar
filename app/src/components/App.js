@@ -7,7 +7,7 @@ export default class App extends React.Component{
   render(){
     return (
       <div>
-        <MyNavbar initActive={0}/>
+        <MyNavbar />
         <Footer />
       </div>
     );
