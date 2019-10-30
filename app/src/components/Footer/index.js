@@ -1,10 +1,10 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
-
+import './styles.css';
 export default class Footer extends React.Component{
     render(){
         return (
-            <footer class="text-muted fixed-bottom shadow">
+            <footer class="text-muted  position-absolute shadow">
                 <div class="container">
                     <p class="float-right">
                         <a href="#">Voltar ao topo</a>
