@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Sobre from "./pages/Sobre/index";
 import Inicio from "./pages/Inicio/index";
 import Contato from "./pages/Contato/index";

@@ -6,7 +6,6 @@ import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container'
 import './styles.css';
 import ongLogo from '../../assets/ong_logo.jpg';
-import { withRouter } from "react-router-dom";
 import { Redirect } from 'react-router-dom';
 
 export default function Login() {
