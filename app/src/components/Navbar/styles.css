@@ -3,7 +3,7 @@
 }
 
 .link-active{
-    color: #fd7014;
+    color: #bc2018;
     font-weight: bold;
     padding-right: .5rem;
     padding-left: .5rem;
@@ -13,7 +13,7 @@
 }
 
 .link-active:hover {
-    color: #fd7014;
+    color: #bc2018;
     text-decoration: none;
     font-size: 20px;
 }
@@ -39,3 +39,6 @@
     font-size: 20px;
 }
 
+nav {
+    margin-bottom: 10px;
+}

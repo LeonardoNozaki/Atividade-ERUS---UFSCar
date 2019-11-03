@@ -1,5 +1,6 @@
 import React from 'react';
 import './styles.css';
+import { Link } from 'react-router-dom'
 
 export default class MyNavbar extends React.Component{
    
@@ -11,7 +12,7 @@ export default class MyNavbar extends React.Component{
         else{
             className = ' link';
         }
-        return <a  className={className} onClick={this.props.onClick} href={this.props.link}>{this.props.value}</a>
+        return <Link className={className} to={this.props.link}>{this.props.value}</Link>
             
     }
 }

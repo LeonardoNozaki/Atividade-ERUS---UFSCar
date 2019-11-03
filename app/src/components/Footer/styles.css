@@ -1,6 +1,26 @@
 footer {
-  background: #ffffff;
+  background: #e1e4e8;
   width: 100%;
   height: 200;
-  position: absolute;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+p{
+  color: #202124;
+}
+
+a:link{
+  text-decoration:none;
+  color: #202124;
+}
+
+a{
+  color: #202124;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+a:hover{
+  color: #202124;
 }
