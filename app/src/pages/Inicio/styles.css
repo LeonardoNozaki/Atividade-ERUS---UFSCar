@@ -2,8 +2,10 @@
     margin-bottom: 10px;
 }
 
-.carousel {
-    margin-top: 20px;
-    margin-bottom: 50px;
-    min-height: 500px;
+@media (min-width:480px){
+  .carousel {
+      margin-top: 20px;
+      margin-bottom: 50px;
+      margin-left: 2.5vw;
+  } 
 }

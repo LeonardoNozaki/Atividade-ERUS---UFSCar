@@ -16,7 +16,6 @@ export default class Inicio extends React.Component{
         <br />
         <div className="carousel">
           <MyCarousel />
-
         </div>
         <br/>
 

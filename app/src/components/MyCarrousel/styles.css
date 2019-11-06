@@ -40,3 +40,8 @@
     background-color: #000000
 }
 
+
+.carouselSmall {
+  min-width: 350px;
+  width: 65vw;
+}
