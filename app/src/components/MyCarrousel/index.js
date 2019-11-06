@@ -8,16 +8,16 @@ import './styles.css';
 export default class MyCarousel extends React.Component{
   render(){
     return (
-          <Carousel className="carouselSmall">
-            <Carousel.Item>
+          <Carousel className="carousel-small">
+            <Carousel.Item >
               <img
                 src={ongImg1}
                 alt="First slide"
                 width="100%" height="500"
               />
-              <Carousel.Caption>
-                <h3>Dia das crianças</h3>
-                <p>Comemoração do dia das crianças na ONG EDI Freitas</p>
+              <Carousel.Caption className="background-opacity">
+                <h3 className="text-border-light">Dia das crianças</h3>
+                <p className="text-border-light"><b>Comemoração do dia das crianças na ONG EDI Freitas</b></p>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -26,9 +26,9 @@ export default class MyCarousel extends React.Component{
                 alt="First slide"
                 width="100%" height="500"
               />
-              <Carousel.Caption>
-                <h3>Olha o algodão doce!!</h3>
-                <p>Muito açucar e alegria para a garotada!!</p>
+              <Carousel.Caption className="background-opacity">
+                <h3 className="text-border-light">Olha o algodão doce!!</h3>
+                <p className="text-border-light"><b>Muito açucar e alegria para a garotada!!</b></p>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -37,9 +37,9 @@ export default class MyCarousel extends React.Component{
                 alt="First slide"
                 width="100%" height="500"
               />
-              <Carousel.Caption>
-                <h3>The winter is coming!</h3>
-                <p>O inverno está chegando, e nois da EDI Freitas já garantimos lares quentinhos</p>
+              <Carousel.Caption className="background-opacity">
+                <h3 className="text-border-light">The winter is coming!</h3>
+                <p className="text-border-light"><b>O inverno está chegando e a EDI Freitas já garantiu lares quentinhos</b></p>
               </Carousel.Caption>
             </Carousel.Item>
           </Carousel>

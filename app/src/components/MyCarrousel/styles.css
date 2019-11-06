@@ -41,7 +41,21 @@
 }
 
 
-.carouselSmall {
+.carousel-small {
   min-width: 350px;
   width: 65vw;
+}
+
+.text-border-light{
+  color: #ffffff;
+}
+
+.background-opacity{
+  background-color: rgba(0,0,0,.4);
+}
+
+.text-border-dark{
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: #ffffff;
+  color: #262626;
 }
