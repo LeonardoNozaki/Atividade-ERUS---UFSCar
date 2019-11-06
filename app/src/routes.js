@@ -6,7 +6,8 @@ import Contato from "./pages/Contato/index";
 import Eventos from "./pages/Eventos/index";
 import Galeria from "./pages/Galeria/index";
 import Noticias from "./pages/Noticias/index";
-import Admin from "./pages/Admin/index";
+import LoginAdmin from "./pages/LoginAdmin/index";
+import Administrar from "./pages/Administrar/index";
 
 const Routes = () => (
   <BrowserRouter>
@@ -17,7 +18,8 @@ const Routes = () => (
       <Route path="/eventos" component={Eventos} />
       <Route path="/galeria" component={Galeria} />
       <Route path="/noticias" component={Noticias} />
-      <Route path="/admin" component={Admin} />
+      <Route path="/login" component={LoginAdmin} />
+      <Route path="/admin" component={Administrar} />
       <Route path="*" component={() => <h1>Page not found</h1>} />
     </Switch>
   </BrowserRouter>

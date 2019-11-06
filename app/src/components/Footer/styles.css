@@ -6,6 +6,10 @@ footer {
   padding-top: 10px;
 }
 
+.center{
+  text-align: center;
+}
+
 p{
   color: #202124;
 }

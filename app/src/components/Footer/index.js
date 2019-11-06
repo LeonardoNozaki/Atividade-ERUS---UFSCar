@@ -17,10 +17,10 @@ export default class Footer extends React.Component{
                 </a>
           </Row>
           <br/>
-          <Row className="justify-content-md-center">
+          <Row className="center justify-content-md-center">
             <p>ONG Edi Freitas - Rua Três, 12, 18071-303. Sorocaba - São Paulo - Brasil.</p>
           </Row>
-          <Row className="justify-content-md-center">
+          <Row className="center justify-content-md-center">
             <p className="copyright pull-right">  &copy; {" Copyright "}{new Date().getFullYear()}{" EdiFreitas - All Rights Reserved"} </p>
           </Row>
         </Container>
