@@ -35,6 +35,10 @@ class Responsavel implements Serializable {
 
     @OneToMany(mappedBy = "responsavel")
     private List<Contato> contatos = new ArrayList<>();
+
+    @OneToOne(mappedBy = "responsavel")
+    private Endereco endereco;
+
     public Responsavel (){
 
     }
