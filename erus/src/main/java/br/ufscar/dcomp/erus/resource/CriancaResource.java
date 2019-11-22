@@ -1,7 +1,8 @@
 package br.ufscar.dcomp.erus.resource;
 
-import br.ufscar.dcomp.erus.model.Categoria;
-import br.ufscar.dcomp.erus.services.CategoriaService;
+import br.ufscar.dcomp.erus.model.Crianca;
+import br.ufscar.dcomp.erus.model.DTO.CriancaDTO;
+import br.ufscar.dcomp.erus.services.CriancaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -11,24 +12,23 @@ import java.net.URI;
 import java.util.List;
 
 @RestController
-@RequestMapping(value="/api/categorias")
-public class CategoriaResource {
+@RequestMapping(value="/api/criancas")
+public class CriancaResource {
 
     @Autowired
-    private CategoriaService service;
+    private CriancaService service;
 
     @RequestMapping(value = "/{id}", method=RequestMethod.GET)
-    public ResponseEntity<Categoria> find(@PathVariable Integer id) {
+    public ResponseEntity<Crianca> find(@PathVariable Integer id) {
 
-        Categoria obj = service.find(id).get();
+        Crianca obj = service.find(id).get();
         return ResponseEntity.ok().body(obj);
 
     }
 
     @RequestMapping(method = RequestMethod.POST)
-    public ResponseEntity<Void> insert(@RequestBody Categoria obj) {
-
-        obj = service.insert(obj);
+    public ResponseEntity<Void> insert(@RequestBody CriancaDTO obj) {
+        Crianca crianca = service.insert(obj);
         URI uri = ServletUriComponentsBuilder.fromCurrentRequest()
                 .path("/{id}").buildAndExpand(obj.getId()).toUri();
 
@@ -37,7 +37,7 @@ public class CategoriaResource {
     }
 
     @RequestMapping(value = "/{id}", method=RequestMethod.PUT)
-    public ResponseEntity<Void> update(@RequestBody Categoria obj, @PathVariable Integer id) {
+    public ResponseEntity<Void> update(@RequestBody Crianca obj, @PathVariable Integer id) {
         obj.setId(id);
         obj = service.update(obj);
         return ResponseEntity.noContent().build();
@@ -52,9 +52,9 @@ public class CategoriaResource {
     }
 
     @RequestMapping(method=RequestMethod.GET)
-    public ResponseEntity<List<Categoria>> findAll() {
+    public ResponseEntity<List<Crianca>> findAll() {
 
-        List<Categoria> list = service.findAll();
+        List<Crianca> list = service.findAll();
         return ResponseEntity.ok().body(list);
     }
 

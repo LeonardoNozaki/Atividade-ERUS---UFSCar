@@ -1,43 +1,23 @@
-package br.ufscar.dcomp.erus.model;
+package br.ufscar.dcomp.erus.model.DTO;
 
-
-import javax.persistence.*;
 import java.io.Serializable;
+import java.time.LocalDate;
 
-@Entity
-@Table(name = "endereco")
-public class Endereco implements Serializable {
+public class EnderecoDTO implements Serializable {
     private static final long serialVersionUID = 1L;
 
-    @Id
-    private Integer id;
-
-    @OneToOne
-    @JoinColumn(name = "id_responsavel", referencedColumnName = "id")
-    @MapsId
-    private Responsavel responsavel;
-
-    @Column(name = "logradouro")
+    private Integer idResponsavel;
     private String logradouro;
-
-    @Column(name = "bairro")
     private String bairro;
-
-    @Column(name = "cidade")
     private String cidade;
-
-    @Column(name = "cep")
     private String cep;
-
-    @Column(name = "numero")
     private String numero;
 
-    public Endereco (){
-
+    public EnderecoDTO() {
     }
 
-    public Endereco(Responsavel responsavel, String logradouro, String bairro, String cidade, String cep, String numero) {
-        this.responsavel = responsavel;
+    public EnderecoDTO(Integer idResponsavel, String logradouro, String bairro, String cidade, String cep, String numero) {
+        this.idResponsavel = idResponsavel;
         this.logradouro = logradouro;
         this.bairro = bairro;
         this.cidade = cidade;
@@ -45,12 +25,12 @@ public class Endereco implements Serializable {
         this.numero = numero;
     }
 
-    public Responsavel getResponsavel() {
-        return responsavel;
+    public Integer getIdResponsavel() {
+        return idResponsavel;
     }
 
-    public void setResponsavel(Responsavel responsavel) {
-        this.responsavel = responsavel;
+    public void setIdResponsavel(Integer idResponsavel) {
+        this.idResponsavel = idResponsavel;
     }
 
     public String getLogradouro() {
